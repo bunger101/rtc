@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Como la wikipedia pero con imágenes" />
+    <meta
+      name="keywords"
+      content="imágenes, temas, galeria de imágenes, inspiración, media, tablero, generativa IA"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .contenedor {
+        width: 500px; /* Ancho deseado */
+        height: 305px; /* Altura deseada */
+        overflow: hidden; /* Ocultar la parte de la imagen que sobrepase los límites */
+        border: 5px solid #262424b5; /* Estilo opcional para el borde */
+        border-radius: 25px 25px 25px 25px; /* Bordes redondeados (opcional) */
+        position: relative;
+        display: inline-block;
+        display: flex; /* Hacer que el contenedor sea un flexbox */
+      }
+      .contenedor img {
+        width: 100%; /* Hacer que la imagen ocupe el ancho del contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+        object-fit: cover; /* Cubrir el contenedor, manteniendo la proporción */
+        border-radius: 25px 25px 25px 25px; /* Bordes redondeados (opcional) */
+        position: absolute;
+      }
+      .centrado {
+        color: white;
+        font-style: italic;
+        bottom: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+      .centrado_or {
+        color: white;
+        font-size: 180%;
+        font-style: normal;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+    </style>
+    <title>Pinterest</title>
+    <link rel="canonical" href="https://es.pinterest.com/today/" />
+    <link rel="icon" href="./favicon/pinterest.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Pinterest</h1>
+      <nav>
+        <a href="https://es.pinterest.com/" class="logo">Pinterest</a>
+        <ul>
+          <li><a href="/explorar">Explorar</a></li>
+          <!-- HTML no conectado para esta página -->
+          <li><a href="#hoy">Hoy</a></li>
+        </ul>
+      </nav>
+      <button>Iniciar sesión</button>
+      <button>Registrarse</button>
+    </header>
+    <main>
+      <center>
+        <h2>23 de Septiembre de 2024</h2>
+        <h3>Mantén la inspiración</h3>
+        <section id="hoy">
+          <ul>
+            <li class="contenedor">
+              <img
+                src="https://res.cloudinary.com/dtzwppz64/image/upload/v1727130632/img1_re2hbo.jpg"
+                alt="Uñas de Otoño"
+              />
+              <p class="centrado">Idea para guardar</p>
+              <p class="centrado_or">Uñas de Otoño</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="contenedor">
+              <img
+                src="https://res.cloudinary.com/dtzwppz64/image/upload/v1727130632/img2_svv4cb.jpg"
+                alt="Deliciosas recetas con manzana"
+              />
+              <p class="centrado">De temporada</p>
+              <p class="centrado_or">Deliciosas recetas con manzana</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="contenedor">
+              <img
+                src="https://res.cloudinary.com/dtzwppz64/image/upload/v1727130632/img3_hefsls.jpg"
+                alt="Imágenes 'aesthetic' que te transportarán al Otoño"
+              />
+              <p class="centrado">Una época mágica</p>
+              <p class="centrado_or">
+                Imágenes 'aesthetic' que te transportarán al Otoño
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li class="contenedor">
+              <img
+                src="https://res.cloudinary.com/dtzwppz64/image/upload/v1727130632/img4_jtymav.jpg"
+                alt="Crea tu propio 'collage' de estilos"
+              />
+              <p class="centrado">Haz 'remix' aquí</p>
+              <p class="centrado_or">Crea tu propio 'collage' de estilos</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="contenedor">
+              <img
+                src="https://res.cloudinary.com/dtzwppz64/image/upload/v1727130632/img5_ptxbho.jpg"
+                alt="Los fondos de pantalla más Otoñales"
+              />
+              <p class="centrado">Personaliza tu móvil</p>
+              <p class="centrado_or">Los fondos de pantalla más Otoñales</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="contenedor">
+              <img
+                src="https://res.cloudinary.com/dtzwppz64/image/upload/v1727130632/img6_rtw3yd.jpg"
+                alt="Recetas de avena 'overnight'"
+              />
+              <p class="centrado">Un desayuño rapidísimo</p>
+              <p class="centrado_or">Recetas de avena 'overnight'</p>
+            </li>
+          </ul>
+        </section>
+      </center>
+    </main>
+    <footer>
+      <center>
+        <p>Eso es todo por hoy</p>
+        <p><b>Vuelve mañana para inspirarte más</b></p>
+        <p>&copy; 2024 Pinterest. Todos los derechos reservados.</p>
+      </center>
+    </footer>
+  </body>
+</html>
